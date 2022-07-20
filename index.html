@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+<style>
+    :root {
+        --White: hsl(0, 0%, 100%);
+        --Light-gray: hsl(212, 45%, 89%);
+        --Grayish-blue: hsl(220, 15%, 55%);
+        --Dark-blue: hsl(218, 44%, 22%);
+        --Font-size: 15px;
+        --Weights: 400, 700;
+    }
+    
+    body {
+        background-color: var(--Light-gray);
+        font-family: "Nunito", sans-serif;
+        font-size: 1.1rem;
+        transition: all 0.4s ease-in-out;
+    }
+    .card{
+        background-color: var(--White);
+        width: 25%;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        margin: 3.5rem 30rem;
+        border-radius: 5%;
+    }
+    img{
+        justify-content: center;
+        border-radius: 5%;
+        width: 90%;
+        height: 60%;
+        margin: .7rem;
+        align-items: center;
+    }
+    h4{
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 3px;
+        margin: 1rem 2rem;
+    }
+    p{
+        text-align: center;
+        color: var(--Grayish-blue);
+        font-weight: 400;
+        font-size:13px;
+        margin: 1rem 3rem;
+    }
+        
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+    @media screen and (max-width: 760px){
+      .card{
+        width: 70%;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        margin: 3.5rem 4rem;
+        border-radius: 5%;
+    }
+    img{
+        justify-content: center;
+        border-radius: 5%;
+        width: 90%;
+        height: 60%;
+        margin: .7rem;
+        align-items: center;
+    }
+    }
+  </style>
+</head>
+<body>
+    <div class="card">
+        <img src="./img/image-qr-code.png" alt="">
+        <h4>Improve your front-end skills by building projects</h2>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level </p>
+
+    </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Manuel</a>.
+  </div>
+</body>
+</html>
